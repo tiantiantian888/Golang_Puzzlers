@@ -14,6 +14,8 @@ func main() {
 			fmt.Println(i)
 			sign <- struct{}{}
 		}()
+	//方法2
+		<-sign
 	}
 
 	// 办法1。
